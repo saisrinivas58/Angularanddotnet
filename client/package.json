@@ -10,7 +10,7 @@
     "test-ci": "ng test --watch=false --browsers=ChromeHeadless",
     "lint": "./node_modules/.bin/tslint -c tslint.json -p tsconfig.json",
     "e2e": "ng e2e",
-    "build": "ng build --prod",
+    "build": "ng build --prod --output-path=\".dist/web\"",
     "build-web": "npm run build",
     "build-and-pack-desktop": "npm run prepare-desktop && npm run pack-desktop && npm run build-desktop-installer",
     "build-desktop": "ng build --configuration=desktop --output-path=\".temp/electron\"",
